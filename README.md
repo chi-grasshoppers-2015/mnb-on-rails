@@ -1,0 +1,1 @@
+# mnb-on-rails
