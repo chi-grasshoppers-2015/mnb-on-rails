@@ -1,12 +1,7 @@
 <h1>MNB On Rails</h1>
 <h3>All posts:</h3>
 <ul>
-  <% @posts.each do |post| %>
-    <li>
-      <%= post.post_date %> -
-      <%= link_to post.title, post %>
-    </li>
-  <% end %>
+  <%= render @posts %>
 </ul>
 
 <%= link_to "New Post", new_post_path %>
