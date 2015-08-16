@@ -1,4 +1,4 @@
-Post.create(title: "Lorem ipsum", "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...")
+Post.create(title: "Lorem ipsum", body: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...")
 
 Post.create(title: "Dolor sit amet", body: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
 
