@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+
+.new-post-form ul {
+  list-style: none;
+  padding: 0;
+}
+
+.new-post-form label {
+  display: block;
+}
+
+.new-post-form input, textarea {
+  margin-bottom: 10px;
+}

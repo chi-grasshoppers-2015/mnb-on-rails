@@ -4,9 +4,16 @@ class PostsController < ApplicationController
   end
 
   def create
+    @post = Post.create(post_params)
+    if @post.valid?
+      redirect_to @post
+    else
+      render "new"
+    end
   end
 
   def new
+    @post = Post.new
   end
 
   def edit
@@ -21,4 +28,9 @@ class PostsController < ApplicationController
 
   def destroy
   end
+
+  private
+    def post_params
+      params.require(:post).permit(:title, :body)
+    end
 end
